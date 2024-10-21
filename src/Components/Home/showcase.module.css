@@ -1,0 +1,188 @@
+ 
+.container {
+  background-color: #000; /* Black background for OTT feel */
+  padding: 20px;
+}
+ 
+.gallerycontainer {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  margin-top: 100px;
+}
+ 
+.gallerywrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+ 
+.gallerygrid {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: transform 0.5s ease-in-out;
+}
+ 
+.galleryitem {
+  position: relative;
+  width: 200px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+ 
+.galleryitem:hover {
+  transform: scale(1.1); /* Enlarge on hover */
+  z-index: 10;
+}
+ 
+.posterImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+ 
+.galleryvideo {
+  display: none; /* Hide video in gallery, only show poster */
+}
+ 
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 100;
+}
+ 
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+ 
+.modalcontent {
+  max-width: 90%;
+  max-height: 90%;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+/* .container{
+    /* width: 100%;
+    height: 110vh;
+    background: url(https://img.freepik.com/free-photo/grunge-black-concrete-textured-background_53876-124541.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; */
+
+    /* align-items: center; 
+}
+
+/* Gallery container 
+.gallerycontainer {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    padding-top: 80px;
+    /* margin-top: 10px; 
+   
+  }
+  .gallerycontainer>h1{
+    margin-top: 100px;
+    font-size: 2.5rem;
+    margin-bottom: 42px;
+    color: #beae88;
+    text-align: center;
+  }
+  
+  /* Wrapper for sliding effect 
+  .gallerywrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    
+    /* margin-top: 100px; */
+    /* position: relative; 
+  }
+  
+  /* Gallery grid for images 
+  .gallerygrid {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+    
+  }
+  
+  /* Gallery item 
+  .galleryitem {
+    min-width: 100%;
+    height: 400px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .galleryimage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Modal styles 
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+  }
+  
+  .modalcontent {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  
+  /* Add smooth transition for the modal 
+  .modalcontent {
+    animation: zoomIn 0.5s;
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+   */
